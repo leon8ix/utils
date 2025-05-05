@@ -12,21 +12,13 @@ jobs:
             contents: read
             packages: write
         steps:
-            - name: Checkout currenct Git repo
-              uses: actions/checkout@v4
-
-            - name: Setting up Bun
-              uses: oven-sh/setup-bun@v2
+            - uses: actions/checkout@v4
+            - uses: actions/setup-node@v4
               with:
-                  bun-version: latest
-
-            - name: Installing dependencies
-              run: bun i
-
-            - name: Building
-              run: bun run build
-
-            - name: Publishing
-              run: bun publish
+                  node-version: 22
+                  registry-url: https://npm.pkg.github.com/
+            - run: npm i
+            - run: npm run build
+            - run: npm publish
               env:
                   NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}

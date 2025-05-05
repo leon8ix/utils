@@ -1,0 +1,30 @@
+{
+	"name": "@leon8ix/utils",
+	"version": "1.0.0",
+	"description": "A collection of all the common utility functions, classes and types I use in most of my projects.",
+	"main": "dist/index.js",
+	"module": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"author": "8ix",
+	"license": "(private)",
+	"scripts": {
+		"build": "tsc"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/leon8ix/utils.git"
+	},
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com"
+	},
+	"keywords": [
+		"utility",
+		"utilities",
+		"helpers",
+		"classes",
+		"types"
+	],
+	"devDependencies": {
+		"typescript": "^5.8.3"
+	}
+}

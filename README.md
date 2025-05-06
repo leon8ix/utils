@@ -8,6 +8,10 @@ A collection of all the common utility functions, classes and types I use in mos
 
 ## Versions
 
+### 1.1.4
+
+-   Fixed exports again
+
 ### 1.1.3
 
 -   Reordered types export to avoid 'never used' warning

@@ -8,6 +8,10 @@ A collection of all the common utility functions, classes and types I use in mos
 
 ## Versions
 
+### 1.1.2
+
+-   Fixed incorrect export setup in package.json
+
 ### 1.1.1
 
 -   Fixed missing DOM types export

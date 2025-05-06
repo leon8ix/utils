@@ -3,7 +3,6 @@ export * from './classes';
 export * from './data-types';
 export * from './files';
 export * from './format';
-export * from './html';
 export * from './math';
 export * from './objects';
 export * from './strings';

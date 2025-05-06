@@ -1,6 +1,6 @@
 {
 	"name": "@leon8ix/utils",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"description": "A collection of all the common utility functions, classes and types I use in most of my projects.",
 	"main": "dist/index.js",
 	"module": "dist/index.js",
@@ -8,7 +8,19 @@
 	"author": "8ix",
 	"license": "(private)",
 	"scripts": {
-		"build": "tsc"
+		"build": "tsup src/index.ts src/dom/index.ts --dts --format esm,cjs --out-dir dist"
+	},
+	"exports": {
+		".": {
+			"import": "./dist/index.esm.js",
+			"require": "./dist/index.cjs.js",
+			"types": "./dist/index.d.ts"
+		},
+		"./dom": {
+			"import": "./dist/dom/index.esm.js",
+			"require": "./dist/dom/index.cjs.js",
+			"types": "./dist/dom/index.d.ts"
+		}
 	},
 	"repository": {
 		"type": "git",
@@ -25,6 +37,7 @@
 		"types"
 	],
 	"devDependencies": {
+		"tsup": "^8.4.0",
 		"typescript": "^5.8.3"
 	}
 }

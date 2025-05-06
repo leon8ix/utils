@@ -1,3 +1,4 @@
+/** Uses JSON as intermediate step, so only basic data types are supported */
 export function deepClone<T extends Record<string, any>>(obj: T): T {
 	return JSON.parse(JSON.stringify(obj));
 }

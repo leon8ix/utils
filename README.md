@@ -8,6 +8,12 @@ A collection of all the common utility functions, classes and types I use in mos
 
 ## Versions
 
+### 1.1.0
+
+-   Added DOM utils and structured them into their own subpath /dom
+    -   Changed export structure
+    -   Compilation uses tsup now instead of tsc, to allow for DOM / Node separation
+
 ### 1.0.0
 
 -   First version extracted and collected by looking through all my project's utils.ts files

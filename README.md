@@ -8,6 +8,11 @@ A collection of all the common utility functions, classes and types I use in mos
 
 ## Versions
 
+### 1.2.0
+
+-   Added typescript utils file
+-   Added some string utils
+
 ### 1.1.2-5
 
 -   Fixed incorrect export setup in package.json

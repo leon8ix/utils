@@ -26,3 +26,19 @@ export function limitString(str: string, maxLength: number): string {
 export function genId(): string {
 	return 'X' + String(Math.random()).slice(-10);
 }
+
+/** Checks whether string is all capital letters */
+export function isUppercase(string: string): boolean {
+	return string === string.toLocaleUpperCase();
+}
+
+/**
+ * Capitalizes the first letter of each word and lower-cases the rest \
+ * e.g. `this STRING` becomes `This String`
+ */
+export function toBasicTitleCase(string: string): string {
+	return string
+		.split(' ')
+		.map((s) => (s[0] || '').toLocaleUpperCase() + s.slice(1).toLocaleLowerCase())
+		.join(' ');
+}

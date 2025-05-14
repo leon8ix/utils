@@ -4,6 +4,7 @@ export function tBool<T extends any>(v: any, def: T): boolean | T {
 	return typeof v === 'boolean' ? v : def;
 }
 
+/** Default: `allowEmpty=false` */
 export function tString<T extends any>(v: any, def: T, allowEmpty = false): string | T {
 	return typeof v === 'string' ? (allowEmpty ? v : v || def) : def;
 }

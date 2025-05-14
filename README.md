@@ -8,6 +8,10 @@ A collection of all the common utility functions, classes and types I use in mos
 
 ## Versions
 
+### 1.5.0
+
+-   Added TS utils CompleteObject and KeysWhereAllowed
+
 ### 1.4.1
 
 -   Improved validation functions by allowing any value as default (e.g. null)

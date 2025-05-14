@@ -11,3 +11,11 @@ export type KeysOfUnion<T> = T extends T ? keyof T : never;
 
 /** Shortcut for `null | undefined` */
 export type Nullish = null | undefined;
+
+/** Extracts the keys of `O` for which a value of type `T` is assignable to the property type */
+export type KeysWhereAllowed<O extends Record<string, any>, T> = {
+	[K in keyof O]-?: [T] extends [Exclude<O[K], undefined>] ? K : never;
+}[keyof O];
+
+/** Makes all keys required and removes `undefined` as an allowed value */
+export type CompleteObject<O extends Record<string, any>> = { [K in keyof O]-?: Exclude<O[K], undefined> };

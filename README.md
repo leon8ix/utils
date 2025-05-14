@@ -8,6 +8,10 @@ A collection of all the common utility functions, classes and types I use in mos
 
 ## Versions
 
+### 1.4.1
+
+-   Improved validation functions by allowing any value as default (e.g. null)
+
 ### 1.4.0
 
 -   Added basic validation functions

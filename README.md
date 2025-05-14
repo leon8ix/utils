@@ -8,6 +8,10 @@ A collection of all the common utility functions, classes and types I use in mos
 
 ## Versions
 
+### 1.4.0
+
+-   Added basic validation functions
+
 ### 1.3.0
 
 -   Added preNullify and moveArrayItem

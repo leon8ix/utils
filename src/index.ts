@@ -8,3 +8,4 @@ export * from './objects';
 export * from './strings';
 export * from './typescript';
 export * from './utils';
+export * from './validate';

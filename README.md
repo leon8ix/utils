@@ -8,6 +8,10 @@ A collection of all the common utility functions, classes and types I use in mos
 
 ## Versions
 
+### 1.6.0
+
+-   Added preventAllButInputs for preventing oncontextmenu
+
 ### 1.5.0
 
 -   Added TS utils CompleteObject and KeysWhereAllowed

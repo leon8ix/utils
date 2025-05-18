@@ -8,6 +8,10 @@ A collection of all the common utility functions, classes and types I use in mos
 
 ## Versions
 
+### 1.7.0
+
+-   Added TS utils StringSuggest and Prettify
+
 ### 1.6.0
 
 -   Added preventAllButInputs for preventing oncontextmenu

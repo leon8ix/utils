@@ -19,3 +19,11 @@ export type KeysWhereAllowed<O extends Record<string, any>, T> = {
 
 /** Makes all keys required and removes `undefined` as an allowed value */
 export type CompleteObject<O extends Record<string, any>> = { [K in keyof O]-?: Exclude<O[K], undefined> };
+
+/** Formats complex and composited object types into simple object structure */
+export type Prettify<T> = {
+	[K in keyof T]: T[K];
+} & {};
+
+/** Allows for passing any string, but keeps auto-complete working */
+export type StringSuggest<T extends string> = T | (string & {});

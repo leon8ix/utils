@@ -1,12 +1,12 @@
 {
 	"name": "@leon8ix/utils",
-	"version": "1.7.0",
+	"version": "1.7.1",
 	"description": "A collection of all the common utility functions, classes and types I use in most of my projects.",
 	"main": "./dist/index.mjs",
 	"module": "./dist/index.mjs",
 	"types": "./dist/index.d.mts",
 	"author": "8ix",
-	"license": "(private)",
+	"license": "MIT",
 	"scripts": {
 		"build": "tsup src/index.ts src/dom/index.ts --dts --format esm --out-dir dist"
 	},

@@ -8,6 +8,11 @@ A collection of all the common utility functions, classes and types I use in mos
 
 ## Versions
 
+### 1.7.2 (250528)
+
+-   Changed GitHub Action to use Bun instead of NPM
+-   Added Readme as an exclusion to publish action
+
 ### 1.7.1 (250521)
 
 -   Added MIT License

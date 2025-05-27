@@ -26,8 +26,8 @@ jobs:
 
             - name: Configure npm registry
               run: |
-                  bun config set registry https://npm.pkg.github.com/
                   echo "//npm.pkg.github.com/:_authToken=${{secrets.GITHUB_TOKEN}}" > ~/.npmrc
+                  echo "registry=https://npm.pkg.github.com/" >> ~/.npmrc
 
             - name: Publish package
               run: bun publish

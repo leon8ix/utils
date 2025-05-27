@@ -24,10 +24,7 @@ jobs:
             - name: Build package
               run: bun run build
 
-            - name: Configure npm registry
-              run: |
-                  echo "//npm.pkg.github.com/:_authToken=${{secrets.GITHUB_TOKEN}}" > ~/.npmrc
-                  echo "registry=https://npm.pkg.github.com/" >> ~/.npmrc
-
             - name: Publish package
-              run: bun publish
+              run: bun publish --registry=https://npm.pkg.github.com/
+              env:
+                  NPM_CONFIG_TOKEN: ${{secrets.GITHUB_TOKEN}}

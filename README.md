@@ -8,6 +8,10 @@ A collection of all the common utility functions, classes and types I use in mos
 
 ## Versions
 
+### 1.8.0 (250601)
+
+-   Added uppercaseFactor function
+
 ### 1.7.2 (250528)
 
 -   Changed GitHub Action to use Bun instead of NPM

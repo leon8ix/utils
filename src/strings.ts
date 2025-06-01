@@ -27,9 +27,20 @@ export function genId(): string {
 	return 'X' + String(Math.random()).slice(-10);
 }
 
-/** Checks whether string is all capital letters */
+/** Checks whether string is all capital letters
+ * - lowercaseness is determined by whether toLocaleUpperCase() changes something */
 export function isUppercase(string: string): boolean {
 	return string === string.toLocaleUpperCase();
+}
+
+/** Ratio of uppercase chars in string.
+ *  - lowercaseness is determined by whether toLocaleUpperCase() changes something
+ *  - `aaa = 0`, `aaBB = 0.5`, `ABC1 = 1` */
+export function uppercaseFactor(text: string) {
+	let uc = 0;
+	let c = '';
+	for (c of text) isUppercase(c) && uc++;
+	return uc / text.length;
 }
 
 /**

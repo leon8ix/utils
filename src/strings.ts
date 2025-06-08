@@ -17,9 +17,19 @@ export function dashToCamel(string: string): string {
 	return string.replaceAll(/-[a-z]/gi, (str) => str.replace('-', '').toUpperCase());
 }
 
-/** Limit sting to char length, if exceeded, an ellipsis (`…`) is appended */
+/** Limits string to char length, if exceeded, an ellipsis (`…`) is appended */
 export function limitString(str: string, maxLength: number): string {
 	return str.length <= maxLength ? str : str.slice(0, maxLength - 3) + '…';
+}
+
+/** Limits string to char length, if exceeded, an ellipsis (`…`) is put in the middle of the string
+ * - `limitStringMiddle('123456789', 7) = '123…789'`
+ * - `limitStringMiddle('123456789', 8) = '1234…789'` */
+export function limitStringMiddle(str: string, maxLength: number): string {
+	if (str.length <= maxLength) return str;
+	const frontLength = Math.floor(maxLength / 2);
+	const tailLength = maxLength - frontLength - 1;
+	return str.slice(0, frontLength) + '…' + str.slice(-tailLength);
 }
 
 /** Very basic id generator, outputs ids like `X1261981986`, uses Math.random() */

@@ -8,6 +8,10 @@ A collection of all the common utility functions, classes and types I use in mos
 
 ## Versions
 
+### 1.9.0 (250608)
+
+-   Added limitStringMiddle function
+
 ### 1.8.0 (250601)
 
 -   Added uppercaseFactor function

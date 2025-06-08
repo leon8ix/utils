@@ -1,6 +1,6 @@
 {
 	"name": "@leon8ix/utils",
-	"version": "1.9.0",
+	"version": "1.10.0",
 	"description": "A collection of all the common utility functions, classes and types I use in most of my projects.",
 	"main": "./dist/index.mjs",
 	"module": "./dist/index.mjs",

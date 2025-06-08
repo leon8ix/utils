@@ -5,7 +5,6 @@ export * from './files';
 export * from './format';
 export * from './math';
 export * from './objects';
-export * from './promises';
 export * from './strings';
 export * from './typescript';
 export * from './utils';

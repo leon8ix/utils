@@ -8,6 +8,10 @@ A collection of all the common utility functions, classes and types I use in mos
 
 ## Versions
 
+### 1.10.1 (250608)
+
+-   Fixed setTimeout not building
+
 ### 1.10.0 (250608)
 
 -   Added delay function for arbitrary await duration

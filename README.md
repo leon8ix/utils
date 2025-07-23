@@ -8,6 +8,11 @@ A collection of all the common utility functions, classes and types I use in mos
 
 ## Versions
 
+### 1.11.0 (250724)
+
+-   Added helpers for dom interaction, useful for keyboard shortcuts
+    -   selct, click, cycle
+
 ### 1.10.1 (250608)
 
 -   Fixed setTimeout not building
@@ -72,9 +77,7 @@ A collection of all the common utility functions, classes and types I use in mos
 
 ### 1.1.0 (250506)
 
--   Added DOM utils and structured them into their own subpath /dom
-    -   Changed export structure
-    -   Compilation uses tsup now instead of tsc, to allow for DOM / Node separation
+-   Added DOM utils and structured them into their own subpath /dom - Changed export structure - Compilation uses tsup now instead of tsc, to allow for DOM / Node separation
 
 ### 1.0.0 (250506)
 

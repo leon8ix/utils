@@ -8,6 +8,10 @@ A collection of all the common utility functions, classes and types I use in mos
 
 ## Versions
 
+### 1.12.0 (250724)
+
+-   Added MapKey and MapValue helpers
+
 ### 1.11.0 (250724)
 
 -   Added helpers for dom interaction, useful for keyboard shortcuts

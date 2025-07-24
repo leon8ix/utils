@@ -27,3 +27,17 @@ export type Prettify<T> = {
 
 /** Allows for passing any string, but keeps auto-complete working */
 export type StringSuggest<T extends string> = T | (string & {});
+
+/**
+ * Extract the Map key type from a defiend Map type \
+ * `type MyMap = Map<string, number | null>` \
+ * `MapKey<MyMap>` -> `string`
+ */
+export type MapKey<T> = T extends Map<infer K, any> ? K : never;
+
+/**
+ * Extract the Map value type from a defiend Map type \
+ * `type MyMap = Map<string, number | null>` \
+ * `MapValue<MyMap>` -> `number | null`
+ */
+export type MapValue<T> = T extends Map<any, infer V> ? V : never;

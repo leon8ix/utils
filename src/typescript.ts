@@ -41,3 +41,14 @@ export type MapKey<T> = T extends Map<infer K, any> ? K : never;
  * `MapValue<MyMap>` -> `number | null`
  */
 export type MapValue<T> = T extends Map<any, infer V> ? V : never;
+
+/**
+ * Extract the type of value an object can contain \
+ * `type MyObject = { foo: string, bar: number }` \
+ * `ObjectValue<MyObject> -> string | null`
+ */
+export type ObjectValue<T extends object> = T[keyof T];
+
+export type DeepPartial<T> = {
+	[P in keyof T]?: T[P] extends object ? DeepPartial<T[P]> : T[P];
+};

@@ -8,6 +8,11 @@ A collection of all the common utility functions, classes and types I use in mos
 
 ## Versions
 
+### 1.13.0 (250803)
+
+-   Added slugify
+-   Added DeepObject and ObjectValue
+
 ### 1.12.0 (250724)
 
 -   Added MapKey and MapValue helpers

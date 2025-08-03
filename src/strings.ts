@@ -63,3 +63,14 @@ export function toBasicTitleCase(string: string): string {
 		.map((s) => (s[0] || '').toLocaleUpperCase() + s.slice(1).toLocaleLowerCase())
 		.join(' ');
 }
+
+/** Turns any string into slug: `My Filé - 1` => `my-file-1` */
+export function slugify(name: string): string {
+	return name
+		.toLocaleLowerCase()
+		.normalize('NFD')
+		.replace(/[\u0300-\u036f]/g, '')
+		.trim()
+		.replaceAll(/\W/g, '-')
+		.replaceAll(/-+/g, '-');
+}

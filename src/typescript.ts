@@ -25,6 +25,21 @@ export type Prettify<T> = {
 	[K in keyof T]: T[K];
 } & {};
 
+/**
+ * Expands custom properties in editor hovers while preserving the native type as an intersection
+ *
+ * Added specifically for Svelte component props, so custom props remain visible without expanding
+ * the full set of native HTML or SVG attributes
+ *
+ * The conditional type encourages TypeScript to expand the custom properties instead of displaying
+ * the outer alias. Hover formatting depends on the TypeScript version and editor
+ *
+ * @example
+ * type Props = PrettifySome<{ label: string }, HTMLButtonAttributes>;
+ * // Displays as { label: string } & HTMLButtonAttributes
+ */
+export type PrettifySome<T, Native> = T extends unknown ? { [K in keyof T]: T[K] } & Native : never;
+
 /** Allows for passing any string, but keeps auto-complete working */
 export type StringSuggest<T extends string> = T | (string & {});
 

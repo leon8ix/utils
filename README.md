@@ -8,6 +8,10 @@ A collection of all the common utility functions, classes and types I use in mos
 
 ## Versions
 
+### 1.14.0 (260928)
+
+-   Added PrettifySome to improve Svelte component prop hovers by expanding custom props while keeping native attribute types compact
+
 ### 1.13.0 (250803)
 
 -   Added slugify

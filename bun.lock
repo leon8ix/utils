@@ -3,6 +3,7 @@
   "workspaces": {
     "": {
       "name": "@leon8ix/utils",
+      "version": "1.14.0",
       "devDependencies": {
         "tsup": "^8.5.0",
         "typescript": "^5.8.3",
